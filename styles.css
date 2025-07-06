@@ -2,6 +2,34 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #032B50; /* Set the whole background to dark blue */
+    position: relative;
+    min-height: 100vh;
+}
+
+/* White strip at the top */
+.top-strip {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* White strip at the bottom */
+.bottom-strip {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
 }
 
 .container {
@@ -14,10 +42,6 @@ body {
     margin-bottom: 40px;
 }
 
-.logo {
-    hurl(vscode-local:/Users/lilianarosales/Downloads/charitywater_logo_horizontal_BlackText.png)
-}
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -26,6 +50,7 @@ body {
     color: #FFD43B; /* Yellow text */
     padding: 40px;
     border-radius: 12px;
+    margin-bottom: 120px;
 }
 
 .hero-text {
@@ -33,13 +58,14 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .hero-text p {
     color: #ffffff;
     margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .cta {
@@ -67,7 +93,18 @@ body {
     cursor: pointer;
 }
 
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 45%;
+    position: relative;
+    z-index: 1;
+}
+
 .hero-image img {
-    max-width: 250px;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
+    display: block;
 }
